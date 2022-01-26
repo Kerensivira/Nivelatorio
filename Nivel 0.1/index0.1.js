@@ -1,4 +1,5 @@
-console.log("hola")
+console.log("hola") //Usé el console.log, para comprobar que mi
+                    //script estuviera correctamente enlazado.
 
 let C = 30
 let resultado = Convertir (C);
