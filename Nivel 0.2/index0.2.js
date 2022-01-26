@@ -19,7 +19,16 @@ function obtenerDatoYSumar() {
     var number = document.getElementById('Seleccione monto').value;
     var resultado = (A + number);
 
+    resultado = parseInt(A) + parseInt(number);
+
     console.log(resultado);
 }
 
 obtenerDatoYSumar();
+
+// Tuve un pequeño inconveniente con la suma, en la prueba que realicé
+// noté que capturaba los datos exitosamente, pero a la hora de hacer la suma
+// en vez de darme la décima de la unidad suministrada, tomaba el 10 como un
+// string y no como una cifra, por lo tanto quedaba algo así:
+// 4 + 10 = 104. Para resolver esto, investigué y me apareció el método ParseInt.
+
